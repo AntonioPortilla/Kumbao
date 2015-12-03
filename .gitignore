@@ -1,0 +1,15 @@
+bower_components
+node_modules
+dist
+#app
+*.htaccess
+.tmp
+prueba.html
+index2.html
+
+# Windows
+*.lnk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/

@@ -1,0 +1,345 @@
+$tamanio_fuente: 2em;
+$font_family: Open Sans Regular;
+$border_radius: 5px;
+$color_blanco: #ffffff;
+$color_blanco_oscuro: #ececec;
+$color_gris: #5a5a5a;
+$color_gris_oscuro: #212020;
+$color_naranja: #ff5e00;
+$color_naranja_claro: #ff7126;
+/* Responsive: Portrait tablets and up */
+@media(min-width: 481px){
+	.jumbotron{
+		h1{
+			margin-top: 130px;
+		}
+
+		p{
+			padding: 20px 100px;
+		}
+
+	}
+
+	.btn-orange{
+		padding: 15px 85px !important;
+	}
+
+	.phrase{
+		&:before{
+			background: url('../images/phrase-left.jpg');
+			border-top: 100px solid transparent;
+			content: '';
+			height: 0;
+			left: 0px;
+			position: absolute;
+			width: 124px;
+			z-index: 999;
+		}
+
+		&:after{
+			background: url('../images/phrase-right.jpg');
+			border-top: 100px solid transparent;
+			content: '';
+			height: 0;
+			right: 0px;
+			position: absolute;
+			width: 124px;
+			z-index: 999;
+			margin-top: -100px;
+		}
+	}
+
+	.robotic{
+		p{
+		  margin-top:20px;
+		}
+
+		h3{
+			&:before{
+				background: url('../images/left.png');
+				border-bottom: 0px solid transparent;
+				border-top: 60px solid transparent;
+				content: '';
+				height: 0;
+				left: -45px;
+				position: absolute;
+				width: 60px;
+				z-index: 999;
+			}
+
+			&:after {
+				background: url("../images/right.png");
+				border-bottom: 0px solid transparent;
+				border-top: 60px solid transparent;
+				content: '';
+				height: 0;
+				position: absolute;
+				right: -45px;
+				top: 66px;
+				width: 60px;
+				z-index: 999;
+			}
+		}
+	}
+
+	.tv {
+		&:before{
+			background: url('../images/marker.png');
+			border-top: 100px solid transparent;
+			content: '';
+			height: 0;
+			margin-top: -90px;
+			position: absolute;
+			right: 12%;
+			width: 100px;
+			z-index: 999;
+		}
+
+		h4{
+			font-size: 2.3em !important;
+			padding: 0 13px;
+			margin-top: 160px;
+
+			&:before{
+				background: url('../images/tv-left.png');
+				border-bottom: 0px solid transparent;
+				border-top: 60px solid transparent;
+				content: '';
+				height: 0;
+				left: -45px;
+				position: absolute;
+				width: 60px;
+				z-index: 999;
+			}
+
+			&:after {
+				background: url("../images/tv-right.png");
+				border-bottom: 0px solid transparent;
+				border-top: 60px solid transparent;
+				content: '';
+				height: 0;
+				position: absolute;
+				right: -45px;
+				width: 60px;
+				z-index: 999;
+			}
+
+			strong{
+				font-family: 'Open Sans Bold'
+			}
+		}
+
+		p{
+			margin-top: 40px;
+			padding: 0 16px;
+		}
+	}
+
+	.genius{
+		padding-bottom: 280px;
+
+		&:before {
+			background: url("../images/marker-gray.png");
+			border-top: 100px solid transparent;
+			content: '';
+			height: 0;
+			margin-top: -62px;
+			position: absolute;
+			left: 50%;
+			width: 100px;
+			z-index: 999;
+		}
+
+		h3{
+			padding-top: 50px;
+
+			&:before{
+				background: url('../images/left.png');
+				border-bottom: 0px solid transparent;
+				border-top: 60px solid transparent;
+				content: '';
+				height: 0;
+				left: -45px;
+				position: absolute;
+				width: 60px;
+				z-index: 999;
+			}
+
+			&:after {
+				/* border-left: 45px solid red; */
+				background: url("../images/right.png");
+				border-bottom: 0px solid transparent;
+				border-top: 60px solid transparent;
+				content: '';
+				height: 0;
+				position: absolute;
+				right: -45px;
+				top: 75px;
+				width: 60px;
+				z-index: 999;
+			}
+
+			span, strong{
+				font-family: 'Open Sans Bold'
+			}
+		}
+
+		p{
+			margin-top: 10%;
+			width: 55%;
+		}
+	}
+
+	.carousel{
+		padding: 30px 0;
+
+		&:before{
+			background: url("../images/marker.png");
+			border-top: 100px solid transparent;
+			content: '';
+			height: 0;
+			margin-top: -90px;
+			position: absolute;
+			left: 12%;
+			width: 100px;
+			z-index: 999;
+		}
+	}
+}
+
+@media(max-width:480px){
+	.jumbotron{
+		h1{
+			font-size: 2em !important;
+		}
+	}
+
+	.robotic{
+		.row:first-child{
+			div:first-child img{
+				width: 100%;
+			}
+		}
+
+		.row:last-child{
+			div:last-child img{
+				width: 100%;
+			}
+		}
+	}
+
+	.tv{
+		.row{
+			div:first-child img{
+				width: 100%;
+			}
+		}
+	}
+
+	.genius{
+		.row{
+			div:last-child img{
+				position: relative !important;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.phrase{
+		&:before{
+			background: none !important;
+		}
+
+		 &:after{
+		 	background: none !important;
+		 }
+
+		 h2{
+		 	text-align: center !important;
+		 }
+
+		 a.btn{
+			background: $color_blanco_oscuro !important;
+			display: block;
+			margin: auto;
+		 }
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 730px;
+	}
+
+	/* Remove the padding we set earlier */
+	.header,
+	.marketing,
+	.footer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	/* Space out the masthead */
+	.header {
+		margin-bottom: 30px;
+	}
+
+	/* Remove the bottom border on the jumbotron for visual effect */
+	.jumbotron {
+		border-bottom: 0;
+	}
+
+	.classTV{
+		display: block;
+		margin: auto;
+		position: relative;
+		width: 80%;
+	}
+
+	.tv h4:after{
+		top: 0px;
+	}
+}
+
+@media (min-width: 768px)and(max-width: 991px){
+	.phrase{
+		height: 100px;
+
+		&:after{
+			margin-top: -96px;
+		}
+
+		h2{
+			font-size: .9em !important;
+			position: relative;
+			z-index: 1000;
+		}
+
+		a.btn{
+			position: relative;
+			z-index: 1000;
+		}
+	}
+}
+
+@media (min-width: 992px)and(max-width: 1199px){
+	.phrase{
+		height: 100px;
+
+		&:after{
+			margin-top: -97px;
+		}
+
+		h2{
+			font-size: 1em !important;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.container{
+		max-width: 1062px;
+	}
+}

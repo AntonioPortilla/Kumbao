@@ -1,0 +1,303 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../fonts/open-sans-fontface/open-sans.scss";
+@import 'media.scss';
+
+body {
+  font-family: $font_family, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: $color_gris_oscuro;
+  background-color: $color_blanco;
+
+  .slideShow{
+    background-image: url('../images/bg-kumbao.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .btn-orange{
+    background: $color_naranja;
+    border: 0;
+    box-shadow: inset 0 -3px rgba(0,0,0,.5);
+    color: $color_blanco;
+  }
+
+  .btn-orange:hover{
+    color: $color_blanco_oscuro;
+  }
+
+  header{
+    img{
+      display: block;
+      margin: auto;
+    }
+  }
+
+    p{
+      color: $color_gris_oscuro;
+      font-size: .9em;
+    }
+
+  .jumbotron{
+    h1{
+      color: $color_blanco !important;
+      font-size: 2.8em;
+      margin-bottom: 15px;
+      margin-left: 0;
+      text-shadow: 2px 3px 5px $color_gris_oscuro;
+    }
+
+    p{
+      color: $color_blanco !important;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: $color_naranja;
+      text-decoration: underline;
+    }
+
+    &:active{
+    	color: yellowgreen
+    }
+
+    &:visited{
+    	color: $color_blanco
+    }
+  }
+
+  ul li{
+    list-style-type: none;
+  }
+
+  header, section, footer{
+    width: 100%;
+    *display: block;
+  }
+
+  section {
+    background-color: $color_blanco;
+    padding: 1.25em 0;
+    padding-bottom: 2em;
+  }
+
+  article, aside {
+    color: $color_blanco;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.35em;
+    *float: left;
+    padding: 5px 5px;
+    *display: block;
+  }
+
+  article {
+    width: 67%;
+    margin-right: 0 5px;
+    border-right: 1px solid #CCCCCC;
+  }
+
+  article p {
+    width: 92%;
+    display: block;
+    margin: auto;
+  }
+
+  aside {
+    width: 29%;
+    margin-right: 0;
+  }
+
+  footer {
+    background: $color_gris_oscuro;
+    min-height: 120px;
+    padding: 30px 0;
+    vertical-align: bottom;
+
+    ul>li>a{
+      color: $color_blanco;
+      font-size: .8em;
+
+      &:hover{
+      	color: $color_naranja !important
+      }
+    }
+
+    blockquote{
+      border-left: 1px solid $color_gris;
+      color: $color_blanco;
+      font-size: .8em;
+      padding: 10px;
+    }
+
+    .row div:last-child ul{
+		padding-left: 0
+    }
+  }
+
+  .jumbotron{
+    background: transparent;
+    text-align: center;
+
+    a{
+    	&.btn {
+	      font-size: 21px;
+	      padding: 14px 24px;
+    	}
+
+    	&:hover {
+	      -moz-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+	      -ms-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+	      -o-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+	      -webkit-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+	      background: $color_naranja_claro none repeat scroll 0% 0%;
+	      box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+	      color: $color_blanco_oscuro !important;
+	    }
+
+	    &:active{
+	    	color: yellowgreen
+	    }
+
+	    &:visited{
+	    	color: $color_blanco
+	    }
+	}
+  }
+
+	.phrase{
+		background: $color_gris;
+
+		a.btn{
+			background: url('../images/btn-white.png') no-repeat;
+			border-radius: 0;
+			color: $color_gris;
+			font-family: Open Sans Bold;
+			padding: 10px 30px;
+			-webkit-animation-duration: 5s;
+			-webkit-animation-delay: 2s;
+			-webkit-animation-iteration-count: infinite;
+			-moz-animation-duration: 5s;
+			-moz-animation-delay: 2s;
+			-moz-animation-iteration-count: infinite;
+
+			&:hover{
+				background: $color_blanco_oscuro;
+			}
+		}
+
+		h2{
+			color: $color_blanco;
+			font-size: 1.2em;
+			text-align: right;
+		}
+	}
+	/* Supporting marketing content */
+	.marketing {
+		margin: 25px 0;
+
+		p + h4{
+			margin-top: 28px !important;
+			border: 5px solid red;
+			background: cyan;
+		}
+	}
+
+	.robotic{
+		background-image: url('../images/bg-robotica.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-bottom: 20px solid $color_gris;
+		display: block;
+		padding-top:50px;
+
+		.row{
+			div:first-child img{
+				display: block;
+				margin: auto;
+			}
+		}
+
+		h3{
+			color: $color_gris;
+			font-size: $tamanio_fuente;
+			margin-top: 65px;
+
+			strong{
+				color: $color_naranja;
+			}
+		}
+	}
+
+	.tv{
+		background-image: url('../images/bg-tv.jpg');
+		display: block;
+		padding-top: 25px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-bottom: 20px solid $color_naranja;
+
+		h4{
+			color: $color_blanco;
+			font-size: $tamanio_fuente;
+
+			strong{
+				color: $color_naranja;
+			}
+		}
+
+		p{
+			color: $color_blanco;
+		}
+	}
+
+	.genius{
+		background-image: url('../images/bg-genios.jpg');
+		display: block;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-bottom: 20px solid $color_gris;
+
+		.row div:last-child{
+			position: inherit;
+
+			img{
+				float: right;
+				position: absolute;
+				right: 0;
+			}
+		}
+
+		h3{
+			color: $color_gris;
+			font-size: $tamanio_fuente;/*
+			-webkit-animation-duration: 5s;
+			-webkit-animation-delay: 2s;
+			-webkit-animation-iteration-count: infinite;
+			-moz-animation-duration: 5s;
+			-moz-animation-delay: 2s;
+			-moz-animation-iteration-count: infinite;*/
+
+			span{
+			color: $color_naranja;
+			}
+		}
+	}
+
+  .carousel{
+    background-image: url('../images/bg-carousel.png');
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2{
+      font: 3rem 'Open Sans Bold';
+      text-align: center;
+      color: $color_blanco;
+    }
+  }
+
+}
