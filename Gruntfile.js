@@ -314,13 +314,13 @@ module.exports = function (grunt) {
         }
       }
     },
+          //'bower_components/modernizr/modernizr.js',
     uglify: {
       dist: {
         files: {
           '<%= config.dist %>/scripts/main.min.js': [
           'bower_components/jquery/dist/jquery.js',
           '<%= config.app %>/scripts/jquery.sabecarousel.js',
-          'bower_components/modernizr/modernizr.js',
           '.tmp/scripts/main.js'
           ]
         }
