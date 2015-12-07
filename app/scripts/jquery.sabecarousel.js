@@ -2,13 +2,13 @@
 {
     if (typeof define === 'function' && define.amd)
     {
-        //define(jQuery || ['jquery'], factory);
+        define(jQuery || ['jquery'], factory); //fabrica
         factory(jQuery || require('jquery'));
     }
-    /*else if (typeof exports === 'object')
+    else if (typeof exports === 'object') //else fabrica
     {
-        //factory(jQuery || require('jquery'));
-    }*/
+        factory(jQuery || require('jquery'));
+    }
     else
     {
         factory(jQuery);

@@ -3,6 +3,7 @@ $font_family: Open Sans Regular;
 $border_radius: 5px;
 $color_blanco: #ffffff;
 $color_blanco_oscuro: #ececec;
+$color_blanco_oscu2: #DCDCDC;
 $color_gris: #5a5a5a;
 $color_gris_oscuro: #212020;
 $color_naranja: #ff5e00;
@@ -208,6 +209,9 @@ $color_naranja_claro: #ff7126;
 }
 
 @media(max-width:480px){
+	.slideShow{
+		background-image: url('../images/bg-kumbao-small.jpg') !important;
+	}
 	.jumbotron{
 		h1{
 			font-size: 2em !important;
@@ -242,6 +246,14 @@ $color_naranja_claro: #ff7126;
 				position: relative !important;
 				width: 100%;
 			}
+		}
+	}
+
+	footer {
+		text-align: center;
+
+		blockquote {
+			border: 0 !important;
 		}
 	}
 }

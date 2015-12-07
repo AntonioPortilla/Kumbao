@@ -3,170 +3,178 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "../fonts/open-sans-fontface/open-sans.scss";
 @import 'media.scss';
 
-body {
-  font-family: $font_family, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  color: $color_gris_oscuro;
-  background-color: $color_blanco;
+body{
+	font-family: $font_family, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: $color_gris_oscuro;
+	background-color: $color_blanco;
 
-  .slideShow{
-    background-image: url('../images/bg-kumbao.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .btn-orange{
-    background: $color_naranja;
-    border: 0;
-    box-shadow: inset 0 -3px rgba(0,0,0,.5);
-    color: $color_blanco;
-  }
-
-  .btn-orange:hover{
-    color: $color_blanco_oscuro;
-  }
-
-  header{
-    img{
-      display: block;
-      margin: auto;
-    }
-  }
-
-    p{
-      color: $color_gris_oscuro;
-      font-size: .9em;
-    }
-
-  .jumbotron{
-    h1{
-      color: $color_blanco !important;
-      font-size: 2.8em;
-      margin-bottom: 15px;
-      margin-left: 0;
-      text-shadow: 2px 3px 5px $color_gris_oscuro;
-    }
-
-    p{
-      color: $color_blanco !important;
-    }
-  }
-
-  a {
-    text-decoration: none;
-
-    &:hover {
-      color: $color_naranja;
-      text-decoration: underline;
-    }
-
-    &:active{
-    	color: yellowgreen
-    }
-
-    &:visited{
-    	color: $color_blanco
-    }
-  }
-
-  ul li{
-    list-style-type: none;
-  }
-
-  header, section, footer{
-    width: 100%;
-    *display: block;
-  }
-
-  section {
-    background-color: $color_blanco;
-    padding: 1.25em 0;
-    padding-bottom: 2em;
-  }
-
-  article, aside {
-    color: $color_blanco;
-    display: inline-block;
-    vertical-align: top;
-    line-height: 1.35em;
-    *float: left;
-    padding: 5px 5px;
-    *display: block;
-  }
-
-  article {
-    width: 67%;
-    margin-right: 0 5px;
-    border-right: 1px solid #CCCCCC;
-  }
-
-  article p {
-    width: 92%;
-    display: block;
-    margin: auto;
-  }
-
-  aside {
-    width: 29%;
-    margin-right: 0;
-  }
-
-  footer {
-    background: $color_gris_oscuro;
-    min-height: 120px;
-    padding: 30px 0;
-    vertical-align: bottom;
-
-    ul>li>a{
-      color: $color_blanco;
-      font-size: .8em;
-
-      &:hover{
-      	color: $color_naranja !important
-      }
-    }
-
-    blockquote{
-      border-left: 1px solid $color_gris;
-      color: $color_blanco;
-      font-size: .8em;
-      padding: 10px;
-    }
-
-    .row div:last-child ul{
-		padding-left: 0
-    }
-  }
-
-  .jumbotron{
-    background: transparent;
-    text-align: center;
-
-    a{
-    	&.btn {
-	      font-size: 21px;
-	      padding: 14px 24px;
-    	}
-
-    	&:hover {
-	      -moz-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
-	      -ms-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
-	      -o-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
-	      -webkit-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
-	      background: $color_naranja_claro none repeat scroll 0% 0%;
-	      box-shadow: inset 0 -.2em rgba(0,0,0,.3);
-	      color: $color_blanco_oscuro !important;
-	    }
-
-	    &:active{
-	    	color: yellowgreen
-	    }
-
-	    &:visited{
-	    	color: $color_blanco
-	    }
+	.os-extrabold{
+		font-family: 'Open Sans Extrabold';
 	}
-  }
+
+	.slideShow{
+		background-image: url('../images/bg-kumbao.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.btn-orange{
+		background: $color_naranja;
+		border: 0;
+		box-shadow: inset 0 -3px rgba(0,0,0,.5);
+		color: $color_blanco;
+	}
+
+	.btn-orange:hover{
+		color: $color_blanco_oscuro;
+	}
+
+	.semantic-content:target{
+		background: rgba(255,113,38, .5);
+	}
+
+	header{
+		img{
+			display: block;
+			margin: auto;
+		}
+	}
+
+	p{
+		color: $color_gris_oscuro;
+		font-size: 1em;
+	}
+
+	.jumbotron{
+		h1 {
+			color: $color_blanco !important;
+			font-size: 2.8em;
+			margin-bottom: 15px;
+			margin-left: 0;
+			text-shadow: 2px 3px 5px $color_gris_oscuro;
+		}
+
+		p {
+			color: $color_blanco !important;
+		}
+	}
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+			color: $color_naranja;
+			text-decoration: underline;
+		}
+
+		&:active{
+			color: yellowgreen
+		}
+
+		&:visited{
+			color: $color_blanco
+		}
+	}
+
+	ul li {
+		list-style-type: none;
+	}
+
+	header, section, footer{
+		width: 100%;
+		*display: block;
+	}
+
+	section {
+		padding: 1.25em 0 2em;
+	}
+
+	article, aside {
+		color: $color_blanco;
+		/*display: inline-block;*/
+		vertical-align: top;
+		line-height: 1.35em;
+		*float: left;
+		padding: 5px 5px;
+		*display: block;
+	}
+
+	article {
+		border-right: 1px solid #CCCCCC;
+		display: block;
+		margin-right: 0 5px;
+		margin: auto;
+		width: 100%;
+	}
+
+	article p {
+		display: block;
+		margin: auto;
+		width: 92%;
+	}
+
+	aside {
+		margin-right: 0;
+		width: 29%;
+	}
+
+	footer {
+		background: $color_gris_oscuro;
+		min-height: 120px;
+		padding: 30px 0;
+		vertical-align: bottom;
+
+		ul>li>a{
+			color: $color_blanco;
+			font-size: .8em;
+
+			&:hover{
+				color: $color_naranja !important
+			}
+		}
+
+		blockquote{
+			border-left: 1px solid $color_gris;
+			color: $color_blanco;
+			font-size: .8em;
+			padding: 10px;
+		}
+
+		.row div:last-child ul{
+			padding-left: 0
+		}
+	}
+
+	.jumbotron{
+		background: transparent;
+		text-align: center;
+
+		a{
+			&.btn {
+				font-size: 21px;
+				padding: 14px 24px;
+			}
+
+			&:hover {
+				-moz-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+				-ms-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+				-o-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+				-webkit-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+				background: $color_naranja_claro none repeat scroll 0% 0%;
+				box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+				color: $color_blanco_oscuro !important;
+			}
+
+			&:active{
+				color: yellowgreen
+			}
+
+			&:visited{
+				color: $color_blanco
+			}
+		}
+	}
 
 	.phrase{
 		background: $color_gris;
@@ -213,6 +221,10 @@ body {
 		border-bottom: 20px solid $color_gris;
 		display: block;
 		padding-top:50px;
+
+		img {
+			cursor: pointer;
+		}
 
 		.row{
 			div:first-child img{
@@ -287,17 +299,71 @@ body {
 		}
 	}
 
-  .carousel{
-    background-image: url('../images/bg-carousel.png');
-    display: block;
-    background-repeat: no-repeat;
-    background-size: cover;
+	.carousel{
+		background-image: url('../images/bg-carousel.png');
+		display: block;
+		background-repeat: no-repeat;
+		background-size: cover;
 
-    h2{
-      font: 3rem 'Open Sans Bold';
-      text-align: center;
-      color: $color_blanco;
-    }
-  }
+		h2{
+			font: 3rem 'Open Sans Bold';
+			text-align: center;
+			color: $color_blanco;
+		}
+	}
+	//popup registro
+	.formSuscribir {
+		background: $color_blanco_oscu2;
+		border-radius: 15px;
+		padding: 30px 40px;
+	}
+
+	.titulo_form {
+		color: $color_gris_oscuro;
+		font-size: 1.8em;
+		text-align: center;
+	}
+
+	.info_free {
+		color: $color_gris_oscuro;
+		font-size: 0.8em;
+		margin-top: 10px;
+	}
+
+	.formKumbao input[type="text"],
+	.formKumbao input[type="email"],
+	.formKumbao select {
+		background: $color_blanco_oscuro;
+		border-radius: 10px;
+		border: 1px solid $color_gris;
+		color: $color_gris_oscuro;
+		display: block;
+		margin: auto;
+		padding: 12px;
+		width: 95%;
+	}
+
+	.formKumbao input[type="text"]:focus,
+	.formKumbao input[type="email"]:focus,
+	.formKumbao select:focus {
+		color: $color_naranja;
+		font-family: 'Open Sans Bold';
+	}
+
+	.btn-rojo, input[type="submit"].v2c_btn_submit {
+		-moz-border-radius: 6px;
+		-ms-border-radius: 6px;
+		-o-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		background: $color_naranja;
+		border-radius: 6px;
+		border: 0;
+		color: $color_blanco;
+		cursor: pointer;
+		font: 1.4em 'Open Sans Bold';
+		margin-top: 20px;
+		padding: 10px 35px;
+		width: 100%;
+	}
 
 }
