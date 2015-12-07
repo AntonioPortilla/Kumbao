@@ -256,6 +256,52 @@ $color_naranja_claro: #ff7126;
 			border: 0 !important;
 		}
 	}
+
+	.titulo_form{
+		font-size: 1.2em !important;
+	}
+
+	.info_free{
+		display: none;
+	}
+
+	.formKumbao {
+		label{
+			display: none;
+		}
+
+		input[type=text],
+		input[type=email],
+		select{
+			margin-top:10px !important;
+			padding: 5px 10px !important;
+			width: 100% !important;
+		}
+	}
+	//ventana cerrar del modal en celular
+	.semantic-content:before{
+		background: transparent !important;
+	}
+
+	.semantic-content .modal-close:after{
+		background: $color_blanco;
+		border-radius: 50%;
+		color: $color_naranja;
+		font-family: 'Open Sans Extrabold';
+		left: initial !important;
+		margin-left: 0 !important;
+		padding: .2em .5em !important;
+		right: 5px !important;
+		top: 3.4em !important;
+	}
+
+	.btn-rojo,
+	input[type="submit"].v2c_btn_submit{
+		font-size: 1.2em !important;
+		margin-top: 15px !important;
+		padding: 8px 0px !important;
+	}
+
 }
 
 @media (max-width: 767px){
