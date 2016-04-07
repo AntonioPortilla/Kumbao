@@ -1,14 +1,143 @@
-$tamanio_fuente: 2em;
-$font_family: Open Sans Regular;
-$border_radius: 5px;
-$color_blanco: #ffffff;
-$color_blanco_oscuro: #ececec;
-$color_blanco_oscu2: #DCDCDC;
-$color_gris: #5a5a5a;
-$color_gris_oscuro: #212020;
-$color_naranja: #ff5e00;
-$color_naranja_claro: #ff7126;
+@import "variables";
 /* Responsive: Portrait tablets and up */
+@media(max-width:480px){
+	.slideShow{
+		background-image: url('../images/bg-kumbao-small.jpg') !important;
+
+		a.btn{
+			display: block;
+		}
+	}
+	.jumbotron{
+		h1{
+			font-size: 2em !important;
+		}
+	}
+
+	.robotic{
+		.row:first-child{
+			div:first-child img{
+				width: 100%;
+			}
+		}
+
+		.row:last-child{
+			div:last-child img{
+				width: 100%;
+			}
+		}
+
+		h3:first-child{
+			margin-top: 25px !important;
+		}
+	}
+
+	.tv{
+		.row{
+			div:first-child img{
+				width: 100%;
+			}
+		}
+	}
+
+	.genius{
+		.row{
+			div:last-child img{
+				position: relative !important;
+				width: 100%;
+			}
+		}
+
+		h3{
+			margin-top: 40px;
+		}
+	}
+
+	footer {
+		text-align: center;
+
+		blockquote {
+			border: 0 !important;
+		}
+	}
+
+	.titulo_form{
+		font-size: 1.2em !important;
+	}
+
+	.info_free{
+		text-align: center;
+	}
+
+	.formSuscribir {
+		padding: 25px 20px !important;
+	}
+
+	.formKumbao {
+		label{
+			display: none;
+		}
+
+		input[type=text],
+		input[type=email],
+		select{
+			margin-top:10px !important;
+			padding: 5px 10px !important;
+			width: 100% !important;
+		}
+	}
+	//ventana cerrar del modal en celular
+	.semantic-content:before{
+		background: transparent !important;
+	}
+
+	.semantic-content .modal-close:after{
+		background: $color_blanco;
+		border-radius: 50%;
+		color: $color_naranja;
+		font-family: 'Open Sans Extrabold';
+		left: initial !important;
+		margin-left: 0 !important;
+		padding: .2em .5em !important;
+		right: 5px !important;
+		top: 3.2em !important;
+	}
+
+	.btn-rojo,
+	input[type="submit"].v2c_btn_submit{
+		font-size: 1.2em !important;
+		margin-top: 15px !important;
+		padding: 8px 0px !important;
+	}
+
+	.ebook{
+		background: $color_blanco !important;
+		padding-bottom: 40px !important;
+
+		.row div:last-child img{
+			margin-top: 25px;
+		}
+
+		a.btn{
+			display: table;
+			margin: auto;
+		}
+	}
+
+	.classTV{
+		margin-bottom: 40px;
+	}
+
+	.marketing{
+		margin-top: 0 !important;
+	}
+
+	#v2c_api_chat, #conversejs{
+		display: none !important;
+	}
+
+}
+
 @media(min-width: 481px){
 	.jumbotron{
 		h1{
@@ -56,6 +185,18 @@ $color_naranja_claro: #ff7126;
 		}
 
 		h3{
+			&.talleres{
+				&:after{
+					margin-right: 65px;
+				}
+			}
+
+			&:first-child{
+				&:after{
+					right: 0;
+				}
+			}
+
 			&:before{
 				background: url('../images/left.png');
 				border-bottom: 0px solid transparent;
@@ -75,10 +216,10 @@ $color_naranja_claro: #ff7126;
 				content: '';
 				height: 0;
 				position: absolute;
-				right: -45px;
 				top: 66px;
 				width: 60px;
 				z-index: 999;
+
 			}
 		}
 	}
@@ -194,7 +335,7 @@ $color_naranja_claro: #ff7126;
 	.carousel{
 		padding: 30px 0;
 
-		&:before{
+		/*&:before{
 			background: url("../images/marker.png");
 			border-top: 100px solid transparent;
 			content: '';
@@ -204,104 +345,8 @@ $color_naranja_claro: #ff7126;
 			left: 12%;
 			width: 100px;
 			z-index: 999;
-		}
+		}*/
 	}
-}
-
-@media(max-width:480px){
-	.slideShow{
-		background-image: url('../images/bg-kumbao-small.jpg') !important;
-	}
-	.jumbotron{
-		h1{
-			font-size: 2em !important;
-		}
-	}
-
-	.robotic{
-		.row:first-child{
-			div:first-child img{
-				width: 100%;
-			}
-		}
-
-		.row:last-child{
-			div:last-child img{
-				width: 100%;
-			}
-		}
-	}
-
-	.tv{
-		.row{
-			div:first-child img{
-				width: 100%;
-			}
-		}
-	}
-
-	.genius{
-		.row{
-			div:last-child img{
-				position: relative !important;
-				width: 100%;
-			}
-		}
-	}
-
-	footer {
-		text-align: center;
-
-		blockquote {
-			border: 0 !important;
-		}
-	}
-
-	.titulo_form{
-		font-size: 1.2em !important;
-	}
-
-	.info_free{
-		display: none;
-	}
-
-	.formKumbao {
-		label{
-			display: none;
-		}
-
-		input[type=text],
-		input[type=email],
-		select{
-			margin-top:10px !important;
-			padding: 5px 10px !important;
-			width: 100% !important;
-		}
-	}
-	//ventana cerrar del modal en celular
-	.semantic-content:before{
-		background: transparent !important;
-	}
-
-	.semantic-content .modal-close:after{
-		background: $color_blanco;
-		border-radius: 50%;
-		color: $color_naranja;
-		font-family: 'Open Sans Extrabold';
-		left: initial !important;
-		margin-left: 0 !important;
-		padding: .2em .5em !important;
-		right: 5px !important;
-		top: 3.4em !important;
-	}
-
-	.btn-rojo,
-	input[type="submit"].v2c_btn_submit{
-		font-size: 1.2em !important;
-		margin-top: 15px !important;
-		padding: 8px 0px !important;
-	}
-
 }
 
 @media (max-width: 767px){
@@ -359,6 +404,10 @@ $color_naranja_claro: #ff7126;
 	.tv h4:after{
 		top: 0px;
 	}
+
+	.ebook a{
+		margin-top: 40px;
+	}
 }
 
 @media (min-width: 768px)and(max-width: 991px){
@@ -382,7 +431,26 @@ $color_naranja_claro: #ff7126;
 	}
 }
 
+@media(min-width: 992px){
+	.ebook{
+		.row div:last-child{
+			position: inherit;
+
+			img{
+				float: right;
+				margin-top: -20px;
+				position: absolute;
+				right: 0;
+			}
+		}
+	}
+}
+
 @media (min-width: 992px)and(max-width: 1199px){
+	.jumbotron p{
+		padding: 20px 0 !important;
+	}
+
 	.phrase{
 		height: 100px;
 
@@ -392,6 +460,65 @@ $color_naranja_claro: #ff7126;
 
 		h2{
 			font-size: 1em !important;
+			text-align: center !important;
+		}
+	}
+
+	.tv{
+		h4{
+			margin-top: 40px !important;
+		}
+
+		p{
+			margin-bottom: 80px;
+		}
+
+		img{
+			margin-top: 25px;
+		}
+	}
+
+	.genius{
+		padding-bottom: 0 !important;
+
+		p{
+			margin-top: 40px !important;
+			width: 100%;
+		}
+
+		.row div:last-child{
+			position: relative !important;
+		}
+
+		img{
+			display: block;
+			float: initial !important;
+			height: auto;
+			margin: auto;
+			position: relative !important;
+			right: initial !important;
+			width: 100%;
+		}
+	}
+
+	.ebook{
+		padding-bottom: 40px !important;
+
+		a.btn{
+			display: table;
+			margin: auto;
+		}
+
+		.row div:last-child{
+			position: relative !important;
+		}
+
+		img{
+			float: initial !important;
+			position: relative !important;
+			right: initial !important;
+			margin: auto !important;
+			display: block;
 		}
 	}
 }

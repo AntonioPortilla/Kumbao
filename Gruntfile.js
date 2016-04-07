@@ -310,7 +310,8 @@ module.exports = function (grunt) {
             'bower_components/animate-css/animate.min.css',
             '<%= config.app %>/styles/modal.css',
             '.tmp/styles/main.css'
-          ]
+          ],
+          '<%= config.dist %>/styles/robotica.min.css': '.tmp/styles/robotica.css'
         }
       }
     },

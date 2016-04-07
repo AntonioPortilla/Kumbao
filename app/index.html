@@ -2,17 +2,30 @@
 <html class="no-js" lang="es">
 	<head>
 		<meta charset="utf-8">
-		<title>kumbao</title>
+		<title>Kumbao</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Kumbao :: Creando una nueva historia para el mundo">
 		<meta name="keywords" content="Kumbao, habilidades, Robótica, Programación, televisión, genios">
 		<meta name="author" content="JALP Laveriano">
+
+		<link rel="stylesheet" href="/styles/sabecarousel.css">
+		<link rel="stylesheet" href="/styles/modal.css">
+		
 		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="http://v1.service.v2contact.com/chat/css">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		<link rel="shortcut icon" href="/favicon.ico">
+		<style>
+			footer{
+				position: absolute;
+				width: 100%;
+			}
+		</style>
 	</head>
 <body>
-    <div class="slideShow">
+<section>
+	<div class="overlay" style="display:none"></div>
+    <article class="slideShow">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -20,6 +33,31 @@
                         <figure class="button-group">
                             <img src="images/logo.png" alt="Kumbao">
                         </figure>
+						<div class="col-right">
+							<div class="toggle-menu">
+								<div id="icono">
+									<div class="one"></div>
+									<div class="two"></div>
+									<div class="three"></div>
+								</div>
+								<div id="menu-k" style="display: none;">
+									<ul>
+										<li>
+											<a href="#" title="Login">
+												<img src="/images/login.png" alt="login">
+												<span>Login</span>
+											</a>
+										</li>
+										<li>
+											<a href="/robotica.html" title="Robotica">
+												<img src="/images/robot.png" alt="robot">
+												<span>Robótica</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
                     </header>
                     <div class="jumbotron">
                     	<h1>Creando una <strong>nueva historia</strong> <br>para el mundo</h1>
@@ -31,8 +69,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="phrase">
+    </article>
+    <article class="phrase">
         <div class="container">
             <div class="row marketing">
                 <div class="col-xs-12 col-sm-8 col-md-9 col-lg-8">
@@ -43,8 +81,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="robotic">
+    </article>
+    <article class="robotic">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -61,7 +99,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <h3>Reinventando la web con <strong>Talleres de Programación</strong></h3>
+                    <h3 class="talleres">Reinventando la web con <strong><br>Talleres de Programación</strong></h3>
                     <p>
                         Haga desarrollar las habilidades para crear tecnología tales como aplicaciones móviles, y programación de juegos en  un lenguaje entretenido y didáctico. &iexcl;<strong>Desarrollo  y potencialización de habilidades tecnológicas!</strong>
                     </p>
@@ -72,8 +110,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="tv">
+    </article>
+    <article class="tv">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -90,8 +128,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="genius">
+    </article>
+    <article class="genius">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
@@ -104,8 +142,34 @@
                 </div>
             </div>
         </div>
-    </div>
-	<div class="carousel">
+    </article>
+	<article class="ebook">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<h3><strong>Ebook</strong></h3>
+					<p>Como hacer que <strong>sus hijos</strong> sean altamente <span><br>creativos</span></p>
+					<ul>
+						<li>
+							Descubra en simples pasos la forma para que sus hijos escriban las <strong>nuevas reglas del mundo</strong>.
+						</li>
+						<li>
+							Hagan que sus hijos aprendan la importancia de equivocarse para lograr <strong>el éxito en sus vidas</strong>.
+						</li>
+						<li>
+							Encuentre el <strong>talento en sus hijos</strong> y transfórmelo en creatividad.
+						</li>
+					</ul>
+					<a class="btn btn-lg btn-orange" href="#here">Descargue Gratis <strong>AQUÍ</strong></a>
+				</div>
+				<div class="col-lg-5">
+					<img src="/images/book.png" alt="book" class="hidden-xs">
+					<img src="/images/book-small.png" alt="book" class="visible-xs">
+				</div>
+			</div>
+		</div>
+	</article>
+	<article class="carousel">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -134,7 +198,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="http://m.gestion.pe/movil/impresa/perufon-sepa-como-empresa-peruana-logra-dar-llamadas-gratis-2054508" target="_blank" title="Gestión">
+                                <a href="http://gestion.pe/movil/impresa/perufon-sepa-como-empresa-peruana-logra-dar-llamadas-gratis-2054508" target="_blank" title="Gestión">
                                   <img src="images/carousel/gestion.png" alt="Gestión" title="Gestión">
                                 </a>
                             </li>
@@ -150,9 +214,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </article>
     <footer>
-	    <div class="container">
+		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6 col-lg-3">
 					<ul class="hidden">
@@ -220,7 +284,7 @@
 						<div id="v2c_api_contact">
 							<div id="v2c_form_contact">
 								<div id="v2c_apiform">
-									<form method="post" action="https://service.v2contact.com/rest/form/post.jsp">
+									<form method="post" action="http://v1.service.v2contact.com/rest/form/post.jsp">
 										<input type="hidden" name="api_key" value="5d0cb12f8c9ad6845110317afc6e2183">
 										<input type="hidden" name="api_server" value="http://www.kumbao.com">
 										<input type="hidden" name="url_origen" value="http%3A%2F%2Fwww.kumbao.com%2F">
@@ -251,8 +315,33 @@
 			<a href="#!" class="modal-close" title="Cerrar" data-close="X"></a>
 		</section>
 	</div>
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<div id="v2c_api_chat"><div class="v2c_api_content"></div></div>
+<script src="http://v1.service.v2contact.com/chat/api-source"></script>
+<script src="http://v1.service.v2contact.com/chat/api/d83ce22559ee9779b2e609196f5a59ff"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="scripts/jquery.sabecarousel.js"></script>
 <script src="scripts/main.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1037644802;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1037644802/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-6815324-10', 'auto');
+ga('send', 'pageview');
+</script>
+</section>
 </body>
 </html>

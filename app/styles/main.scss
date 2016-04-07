@@ -24,40 +24,52 @@ body{
 		border: 0;
 		box-shadow: inset 0 -3px rgba(0,0,0,.5);
 		color: $color_blanco;
-	}
 
-	.btn-orange:hover{
-		color: $color_blanco_oscuro;
+		&:hover{
+			-moz-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+			-ms-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+			-o-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+			-webkit-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+			background: $color_naranja_oscuro none repeat scroll 0% 0%;
+			box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+			color: $color_blanco_oscuro !important;
+		}
 	}
 
 	.semantic-content:target{
 		background: rgba(255,113,38, .5);
 	}
 
+	.color-naranja{
+		color: $color_naranja;
+	}
+
+	iframe{
+		border: 	none !important;
+		bottom: 	0 !important;
+		height: 	0 !important;
+		margin: 	0 !important;
+		padding: 	0 !important;
+		top: 		0 !important;
+	}
+
 	header{
-		img{
-			display: block;
-			margin: auto;
+		figure{
+			a{
+				display: table;
+				margin: auto;
+			}
+
+			img{
+				display: block;
+				margin: auto;
+			}
 		}
 	}
 
-	p{
+	p, li{
 		color: $color_gris_oscuro;
 		font-size: 1em;
-	}
-
-	.jumbotron{
-		h1 {
-			color: $color_blanco !important;
-			font-size: 2.8em;
-			margin-bottom: 15px;
-			margin-left: 0;
-			text-shadow: 2px 3px 5px $color_gris_oscuro;
-		}
-
-		p {
-			color: $color_blanco !important;
-		}
 	}
 
 	a {
@@ -86,37 +98,125 @@ body{
 		*display: block;
 	}
 
-	section {
-		padding: 1.25em 0 2em;
+	/*menu*/
+	#icono {
+		border-radius: 50%;
+		border: 2px solid $color_blanco;
+		cursor: pointer;
+		float: right;
+		margin-right: 32px;
+		overflow: hidden;
+		padding: 15px;
+		position: relative;
+		z-index: 1001;
+
+		div{
+			background: $color_blanco;
+			border-radius: 10px;
+			height: 5px;
+			margin: 4px auto;
+			transition: all .3s;
+			width: 30px;
+		}
+
+		&.active{
+			.one{
+				-moz-transform: rotate(45deg) translate(5px,5px);
+				-ms-transform: rotate(45deg) translate(5px,5px);
+				-o-transform: rotate(45deg) translate(5px,5px);
+				-webkit-transform: rotate(45deg) translate(5px,5px);
+				transform: rotate(45deg) translate(5px,5px);
+			}
+
+			.two {
+				opacity: 0;
+			}
+
+			.three{
+				-moz-transform: rotate(-45deg) translate(7px,-8px);
+				-ms-transform: rotate(-45deg) translate(7px,-8px);
+				-o-transform: rotate(-45deg) translate(7px,-8px);
+				-webkit-transform: rotate(-45deg) translate(7px,-8px);
+				transform: rotate(-45deg) translate(7px,-8px);
+			}
+		}
 	}
 
-	article, aside {
-		color: $color_blanco;
-		/*display: inline-block;*/
-		vertical-align: top;
-		line-height: 1.35em;
-		*float: left;
-		padding: 5px 5px;
-		*display: block;
+	/*.toggle-menu {
+		height: auto;
+		left: 0;
+		overflow: hidden;
+		top: 0;
+		z-index: 103;
+	}*/
+
+	#menu-k {
+		//background: rgba(0, 0, 0, 0.2);
+		color: $color_gris_oscuro;
+		display: none;
+		height: auto;
+		margin-top: 75px;
+		overflow: hidden;
+		padding: 5px;
+		position: absolute;
+		right: 0;
+		z-index: 999;
+
+		ul{
+			margin: 0 auto;
+			padding: 5px 15px;
+			//border: 1px solid $color_naranja_claro;
+
+			li{
+				border-bottom: 1px solid $color_blanco;
+				display: block;
+				line-height: 0;
+				list-style-type: none;
+				margin: 0 auto;
+				padding: 9px 0 5px 0;
+				position: relative;
+
+				&:last-child{
+					border: none !important;
+				}
+
+				a{
+					color: $color_blanco;
+					display: block;
+					padding: 5px 0px;
+					text-align: left;
+
+					img{
+						display: inline;
+						margin-top: -5px;
+					}
+
+					span{
+						border-left: 1px solid $color_blanco;
+						padding-left: 5px;
+						font: 1.5em 'Open Sans Bold' !important;
+					}
+
+					&:hover{
+						text-decoration: initial;
+					}
+				}
+			}
+		}
 	}
 
-	article {
-		border-right: 1px solid #CCCCCC;
-		display: block;
-		margin-right: 0 5px;
-		margin: auto;
+	.overlay {
+		background: rgba(0, 0, 0, .8);
+		bottom: 0;
+		height: 100%;
+		left: 0;
+		margin-top: 0;
+		padding: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
 		width: 100%;
-	}
-
-	article p {
-		display: block;
-		margin: auto;
-		width: 92%;
-	}
-
-	aside {
-		margin-right: 0;
-		width: 29%;
+		z-index: 1000;
 	}
 
 	footer {
@@ -150,20 +250,18 @@ body{
 		background: transparent;
 		text-align: center;
 
+		h1 {
+			color: $color_blanco !important;
+			font-size: 2.8em;
+			margin-bottom: 15px;
+			margin-left: 0;
+			text-shadow: 2px 3px 5px $color_gris_oscuro;
+		}
+
 		a{
 			&.btn {
 				font-size: 21px;
 				padding: 14px 24px;
-			}
-
-			&:hover {
-				-moz-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
-				-ms-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
-				-o-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
-				-webkit-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
-				background: $color_naranja_claro none repeat scroll 0% 0%;
-				box-shadow: inset 0 -.2em rgba(0,0,0,.3);
-				color: $color_blanco_oscuro !important;
 			}
 
 			&:active{
@@ -173,6 +271,10 @@ body{
 			&:visited{
 				color: $color_blanco
 			}
+		}
+
+		p {
+			color: $color_blanco !important;
 		}
 	}
 
@@ -299,6 +401,40 @@ body{
 		}
 	}
 
+	.ebook{
+		background-image: url("../images/bg-ebook.jpg");
+		display: block;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 20px 0 80px 0;
+
+		h3{
+			color: $color_naranja;
+			font-size: 3em;
+		}
+
+		p{
+			font: 1.5em 'Open Sans Light';
+
+			strong{
+				font-family: 'Open Sans Bold';
+			}
+
+			span{
+				color: $color_naranja;
+				font-family: 'Open Sans Bold';
+			}
+		}
+
+		ul{
+			li{
+				color: $color_gris;
+				list-style-image: url('../images/li.png');
+				padding-bottom: 15px;
+			}
+		}
+	}
+
 	.carousel{
 		background-image: url('../images/bg-carousel.png');
 		display: block;
@@ -364,6 +500,16 @@ body{
 		margin-top: 20px;
 		padding: 10px 35px;
 		width: 100%;
+
+		&:hover{
+			-moz-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+			-ms-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+			-o-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+			-webkit-box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+			background: $color_naranja_oscuro none repeat scroll 0% 0%;
+			box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+			color: $color_blanco_oscuro !important;
+		}
 	}
 
 }

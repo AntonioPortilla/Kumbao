@@ -1,6 +1,8 @@
-bower_components
-node_modules
-dist
+bower_components/
+node_modules/
+dist/
+descargas/
+prueba/
 #app
 *.htaccess
 .tmp
